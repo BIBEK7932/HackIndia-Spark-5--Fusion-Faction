@@ -1,0 +1,31 @@
+<html>
+    <body bgcolor=#d4a3ae>
+
+        <center>
+
+        <h1> Hate Speech Detection </h1><br>
+        
+        <form method="POST", action="/submit" enctype="multipart/form-data">
+           <b> First value :  <input type="text" name='abcd' id="abcd" placeholder="enter 1"> <br><br><br></b>
+            <input type="submit" , value='predict!' >
+        </form>
+
+        <center>
+
+            <h1>  PREDICTION :  </h1>
+        
+        {%if data == 0%}
+        <h1>The input text is classified as hate speech.</h1>  
+    
+        {%else%}
+        <h1>The input text is not classified as hate speech.</h1>
+        
+        {%endif%}
+    
+    
+        </center>        
+        
+    </center>
+
+    </body>
+</html>
